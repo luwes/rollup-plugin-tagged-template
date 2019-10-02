@@ -8,7 +8,7 @@ Use plain HTML files as tagged templates.
 
 ### rollup.config.js:
 
-```
+```js
 import taggedTemplate from 'rollup-plugin-tagged-template';
 
 export default {
@@ -19,7 +19,7 @@ export default {
   },
   plugins: [
     taggedTemplate({
-      include: '**/*.js.html',  // required
+      include: '**/*.html',     // required
       exclude: '**/*.js',       // optional
       tagName: 'html',          // optional - for nested tag templates
       propsName: 'props'        // optional
