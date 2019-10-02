@@ -1,0 +1,49 @@
+{
+  "name": "rollup-plugin-tagged-template",
+  "version": "0.0.1",
+  "description": "Use plain HTML files as tagged templates.",
+  "main": "./dist/rollup-plugin-tagged-template.cjs.js",
+  "module": "./dist/rollup-plugin-tagged-template.es.js",
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "yarn build",
+    "test": "mocha 'test/*.js' --require esm",
+    "test:watch": "yarn build -w & yarn test --watch"
+  },
+  "files": [
+    "README.md",
+    "dist/"
+  ],
+  "keywords": [
+    "rollup",
+    "rollup plugin",
+    "html",
+    "template",
+    "tagged template",
+    "template literal"
+  ],
+  "author": "Wesley Luyten <me@wesleyluyten.com> (https://wesleyluyten.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luwes/rollup-plugin-tagged-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/luwes/rollup-plugin-tagged-template/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "charcodes": "0.2.0",
+    "magic-string": "0.25.4",
+    "rollup-pluginutils": "2.8.2"
+  },
+  "devDependencies": {
+    "browser-env": "^3.2.6",
+    "eslint": "6.5.1",
+    "esm": "^3.2.25",
+    "mocha": "^6.2.1",
+    "prettier": "^1.18.2",
+    "rollup": "^1.22.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "sinuous": "^0.15.2"
+  }
+}
