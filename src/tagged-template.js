@@ -4,10 +4,10 @@ import { getIdentifiers } from './utils.js';
 
 export default function taggedTemplate(opts = {}) {
   opts = {
-    ...opts,
     include: ['**/*.html'],
     tagName: 'html',
-    propsName: 'props'
+    propsName: 'props',
+    ...opts
   };
 
   const filter = createFilter(opts.include, opts.exclude);
