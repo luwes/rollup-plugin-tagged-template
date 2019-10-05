@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-tagged-template",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Use plain HTML files as tagged templates.",
   "main": "./dist/rollup-plugin-tagged-template.cjs.js",
   "module": "./dist/rollup-plugin-tagged-template.es.js",
